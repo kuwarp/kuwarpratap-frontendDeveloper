@@ -38,7 +38,7 @@ const FoodCard = ({ area, sortOrder }) => {
       });
       setFoodItems(sortedItems);
     }
-  }, [sortOrder]);
+  }, [foodItems, sortOrder]);
 
   const indexOfLastMeal = currentPage * mealsPerPage;
   const indexOfFirstMeal = indexOfLastMeal - mealsPerPage;
